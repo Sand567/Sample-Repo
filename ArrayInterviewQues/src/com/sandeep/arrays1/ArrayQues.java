@@ -21,7 +21,9 @@ public class ArrayQues {
 		
 	}
 	
-	// This is a program to find duplicate elements in an array
+	/**
+	 * This is a program to find duplicate elements in an array
+	 */
 	private static void findDuplicateElementInArray() {
 		String [] strArray = {"Java", "JSP", "servlets", "java", "Struts", "JSP", "JDBC", "Servlets"};
 		int [] intArray = {4, 5, 7, 2, 4, 1, 7};
@@ -43,7 +45,9 @@ public class ArrayQues {
 		}
 	}
 	
-	// This is a program to find duplicate elements in an array using HashSet
+	/**
+	 * This is a program to find duplicate elements in an array using HashSet
+	 */
 	private static void findDuplicateElementInArrayHashSet() {
 		String [] strArray = {"Java", "JSP", "Servlets", "Java", "Struts", "JSP", "JDBC", "Servlets"};
 		HashSet<String> stringSet = new HashSet<>();
@@ -54,7 +58,9 @@ public class ArrayQues {
 		}
 	}
 	
-	// This is a program to find the second largest element in an integer array
+	/**
+	 * This is a program to find the second largest element in an integer array
+	 */
 	private static void findSecondLargestElement() {
 		
 		int firstLargest;
@@ -86,7 +92,9 @@ public class ArrayQues {
 		
 	}
 	
-	// This program will check the equality of 2 arrays, iteratively
+	/**
+	 * This program will check the equality of 2 arrays, iteratively
+	 */
 	private static void checkEqualityOfArrays() {
 		
 		int[] arr1 = {21, 57, 11, 34, 24};

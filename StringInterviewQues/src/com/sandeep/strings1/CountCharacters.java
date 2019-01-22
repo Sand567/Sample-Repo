@@ -9,6 +9,11 @@ public class CountCharacters {
 
 	}
 	
+	/**
+	 * This method counts the number of times
+	 * the word has repeated
+	 * @param word
+	 */
 	private static void countOfCharacters(String word) {
 		
 		int charCount = 0;

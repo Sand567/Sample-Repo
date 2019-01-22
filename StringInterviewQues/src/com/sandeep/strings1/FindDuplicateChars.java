@@ -14,6 +14,11 @@ public class FindDuplicateChars {
 		printDuplicateCharacters("Java");
 	}
 	
+	/**
+	 * This method finds and prints 
+	 * duplicate characters in a word or a sentence
+	 * @param word
+	 */
 	public static void printDuplicateCharacters(String word) {
 		
 		char[] characters = word.toCharArray();

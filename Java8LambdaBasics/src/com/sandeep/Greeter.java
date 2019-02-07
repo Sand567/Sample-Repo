@@ -1,5 +1,7 @@
 package com.sandeep;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 public class Greeter {
 	
 	public void greet(Greeting greeting) {
@@ -18,8 +20,15 @@ public class Greeter {
 		// which means it should just contain one single method declaration
 		Greeting myLambdaFunction = () -> System.out.println("Hello World!");
 		
-//		MyAdd myAddFunction = (int a, int b) -> a + b;
-
+		Greeting innerClassGreeting = new Greeting() {
+			public void perform() {
+				System.out.println("Hello World!");
+			}
+		};
+		
+		greeter.greet(myLambdaFunction);
+		greeter.greet(innerClassGreeting);
+		
 	}
 
 }

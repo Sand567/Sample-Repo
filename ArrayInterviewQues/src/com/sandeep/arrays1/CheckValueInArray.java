@@ -16,15 +16,15 @@ public class CheckValueInArray {
 		System.out.printf("Does array %s containsElement %s? %b %n", Arrays.toString(input), 6, containsElement(input, 6));
 		System.out.println();
 		
-		String [] names = new String[] {"Sandeep", "Sharath", "Nagendra", "Mahima"};
+		String [] names = new String[] {"John", "Jim", "Jane", "Jill"};
 		System.out.printf("Does array %s isExists %s? %b %n", Arrays.toString(names),
-				"Nagendra", isExists(names, "Nagendra"));
+				"Jill", isExists(names, "Jill"));
 		System.out.printf("Does array %s containsElement %s? %b %n", Arrays.toString(names),
-				"Nagendra", containsElement(names, "Nagendra"));
+				"Jill", containsElement(names, "Jill"));
 		System.out.printf("Does array %s isExists %s? %b %n", Arrays.toString(names),
-				"Shiva", isExists(names, "Shiva"));
+				"James", isExists(names, "James"));
 		System.out.printf("Does array %s containsElement %s? %b %n", Arrays.toString(names),
-				"Shiva", containsElement(names, "Shiva"));
+				"James", containsElement(names, "James"));
 
 	}
 

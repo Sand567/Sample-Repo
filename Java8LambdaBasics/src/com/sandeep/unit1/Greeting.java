@@ -1,4 +1,4 @@
-package com.sandeep;
+package com.sandeep.unit1;
 
 @FunctionalInterface
 public interface Greeting {

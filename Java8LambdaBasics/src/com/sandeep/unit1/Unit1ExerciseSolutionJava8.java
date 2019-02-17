@@ -1,7 +1,10 @@
-package com.sandeep;
+package com.sandeep.unit1;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
+
+import com.sandeep.common.Person;
 
 public class Unit1ExerciseSolutionJava8 {
 

@@ -43,5 +43,15 @@ public class Main {
 		array[j] = temp;
 		
 	}
+	
+	/*	Sample Output:
+	 	intArray: [20, -15, 7, 35, 1, -22, 55]
+		intArray: [-15, 7, 20, 1, -22, 35, 55]
+		intArray: [-15, 7, 1, -22, 20, 35, 55]
+		intArray: [-15, 1, -22, 7, 20, 35, 55]
+		intArray: [-15, -22, 1, 7, 20, 35, 55]
+		intArray: [-22, -15, 1, 7, 20, 35, 55]
+		Final intArray: [-22, -15, 1, 7, 20, 35, 55]
+	 */
 
 }

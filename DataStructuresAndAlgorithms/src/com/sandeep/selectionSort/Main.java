@@ -6,6 +6,7 @@ import java.util.Arrays;
  * Selection Sort
  * Time Complexity: Quadratic => O(n^2)
  * Unstable Algorithm
+ * In place algorithm
  */
 public class Main {
 
@@ -44,7 +45,8 @@ public class Main {
 		
 	}
 	
-	/*	Sample Output:
+	/*	
+	 	Sample Output:
 	 	intArray: [20, -15, 7, 35, 1, -22, 55]
 		intArray: [-15, 7, 20, 1, -22, 35, 55]
 		intArray: [-15, 7, 1, -22, 20, 35, 55]

@@ -1,11 +1,11 @@
-package com.sandeep.bubbleSort;
+package com.sandeep.selectionSort;
 
 import java.util.Arrays;
 
 /**
- * Bubble Sort
+ * Selection Sort
  * Time Complexity: Quadratic => O(n^2)
- * Stable Algorithm
+ * Unstable Algorithm
  */
 public class Main {
 
@@ -13,14 +13,17 @@ public class Main {
 		
 		int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 		
-		// last is the first to get sorted
 		for (int lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
-			for (int i = 0; i < lastUnsortedIndex; i++) {
-				if (intArray[i] > intArray[i + 1]) {
-					swap(intArray, i, i + 1);
+			
+			int largestIndex = 0;
+			
+			for (int i = 1; i <= lastUnsortedIndex; i++) {
+				if (intArray[i] > intArray[largestIndex]) {
+					largestIndex = i;
 				}
 			}
 			
+			swap(intArray, largestIndex, lastUnsortedIndex);
 			System.out.println("intArray: " + Arrays.toString(intArray));
 		}
 		
@@ -40,15 +43,5 @@ public class Main {
 		array[j] = temp;
 		
 	}
-	
-	/*	Sample Output:
-		intArray: [20, -15, 7, 35, 1, -22, 55]
-		intArray: [-15, 7, 20, 1, -22, 35, 55]
-		intArray: [-15, 7, 1, -22, 20, 35, 55]
-		intArray: [-15, 1, -22, 7, 20, 35, 55]
-		intArray: [-15, -22, 1, 7, 20, 35, 55]
-		intArray: [-22, -15, 1, 7, 20, 35, 55]
-		Final intArray: [-22, -15, 1, 7, 20, 35, 55]
-	*/
 
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import com.sandeep.common.Helper;
 
 /**
- * Insertion Sort
+ * Shell Sort
  * Time Complexity: Quadratic => O(n^2) or may be better
  * UnStable Algorithm
  * In place algorithm

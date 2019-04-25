@@ -2,6 +2,8 @@ package com.sandeep.inserttionSort;
 
 import java.util.Arrays;
 
+import com.sandeep.common.Helper;
+
 /**
  * Insertion Sort
  * Time Complexity: Quadratic => O(n^2)
@@ -12,7 +14,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		int[] intArray = {20, 35, -15, 7, 55, 1, -22};
+		int[] intArray = Helper.getArray();
 		
 		// This will maintain the sorted partition from left to right
 		for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length; firstUnsortedIndex++) {
@@ -26,7 +28,7 @@ public class Main {
 			// start looping from index 1 till the end of the array
 			// by checking the elements in the sorted partition
 			// If elements in the sorted partition are > than newElement then switch 
-			// places until newElement is in the right position to be inserted
+			// places until newElement is in its proper position to be inserted
 			// into the sorted partition
 			for (i = firstUnsortedIndex; i > 0 && intArray[i - 1] > newElement; i--) {
 				intArray[i] = intArray[i - 1];
@@ -39,6 +41,7 @@ public class Main {
 			
 		}
 		
+		System.out.println("\nInsertion Sort");
 		System.out.println("Final intArray: " + Arrays.toString(intArray));
 
 	}
@@ -51,6 +54,8 @@ public class Main {
 		intArray: [-15, 7, 20, 35, 55, 1, -22]
 		intArray: [-15, 1, 7, 20, 35, 55, -22]
 		intArray: [-22, -15, 1, 7, 20, 35, 55]
+		
+		Insertion Sort
 		Final intArray: [-22, -15, 1, 7, 20, 35, 55]
 	 */
 

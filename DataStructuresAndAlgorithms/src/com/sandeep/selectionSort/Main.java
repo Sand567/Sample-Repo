@@ -2,6 +2,8 @@ package com.sandeep.selectionSort;
 
 import java.util.Arrays;
 
+import com.sandeep.common.Helper;
+
 /**
  * Selection Sort
  * Time Complexity: Quadratic => O(n^2)
@@ -24,25 +26,13 @@ public class Main {
 				}
 			}
 			
-			swap(intArray, largestIndex, lastUnsortedIndex);
+			Helper.swap(intArray, largestIndex, lastUnsortedIndex);
 			System.out.println("intArray: " + Arrays.toString(intArray));
 		}
 		
+		System.out.println("\nSelection Sort");
 		System.out.println("Final intArray: " + Arrays.toString(intArray));
 
-	}
-	
-	// Swaps i and j
-	private static void swap(int[] array, int i, int j) {
-		
-		if (i == j) {
-			return;
-		}
-		
-		int temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
-		
 	}
 	
 	/*	
@@ -53,6 +43,8 @@ public class Main {
 		intArray: [-15, 1, -22, 7, 20, 35, 55]
 		intArray: [-15, -22, 1, 7, 20, 35, 55]
 		intArray: [-22, -15, 1, 7, 20, 35, 55]
+		
+		Selection Sort
 		Final intArray: [-22, -15, 1, 7, 20, 35, 55]
 	 */
 

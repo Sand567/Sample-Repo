@@ -29,6 +29,14 @@ public class InsertSortRecursive {
 		}
 		
 		input[i] = newElement;
+		
+		System.out.println("Result of call when numItems: " + numItems);
+		for (i = 0; i < input.length; i++) {
+			System.out.print(input[i]);
+			System.out.print(", ");
+		}
+		System.out.println("");
+		System.out.println("-----------------------------");
 	}
 
 }

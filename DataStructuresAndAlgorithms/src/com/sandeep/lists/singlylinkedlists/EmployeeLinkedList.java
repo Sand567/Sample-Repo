@@ -38,12 +38,44 @@ public class EmployeeLinkedList {
 		System.out.print("HEAD -> ");
 		
 		while (current != null) {
-			System.out.print(current);
+			System.out.print(current.getEmployee().getFirstName());
 			System.out.print(" -> ");
 			current = current.getNext();
 		}
 		
 		System.out.print("null");
+	}
+	
+	public void reverse() {
+		EmployeeNode pointer = head;
+		EmployeeNode current = null;
+		EmployeeNode previous = null;
+		
+		while (pointer != null) {
+			current = pointer;
+			pointer = pointer.getNext();
+			
+			current.setNext(previous);
+			previous = current;
+			head = current;
+		}
+	}
+	
+	public Employee getNthNodeFromTail(int n) {
+		EmployeeNode fast = head;
+		EmployeeNode slow = head;
+		int start = 1;
+		
+		while (fast.getNext() != null) {
+			fast = fast.getNext();
+			start++;
+			
+			if (start > n) {
+				slow = slow.getNext();
+			}
+		}
+		
+		return slow.getEmployee();
 	}
 
 }

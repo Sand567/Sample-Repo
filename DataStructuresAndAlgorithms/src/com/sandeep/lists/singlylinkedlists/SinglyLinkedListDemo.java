@@ -26,6 +26,14 @@ public class SinglyLinkedListDemo {
 		list.removeFromFront();
 		System.out.println("Size: " + list.getSize());
 		list.printList();
+		
+//		System.out.println();
+//		list.reverse();
+//		list.printList();
+		
+		System.out.println();
+		System.out.println("3rd node from tail is " + list.getNthNodeFromTail(3));
+		System.out.println("1st node from tail is " + list.getNthNodeFromTail(1));
 
 	}
 

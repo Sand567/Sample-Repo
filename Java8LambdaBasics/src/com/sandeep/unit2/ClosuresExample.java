@@ -9,7 +9,7 @@ public class ClosuresExample {
 		// here the variable b should be final
 		// the value of b should not change
 		// if we are trying to to change the value of b within
-		// the anonymous class it will then throw an error
+		// the anonymous class, it will then throw an error
 		int b = 20;
 		doProcess(a, i -> System.out.println(i + b));
 

@@ -15,6 +15,8 @@ public class PalindromeCheck {
 		System.out.println(isPalindromic("racecar") ? "Palindrome \n" : "Not a Palindrome \n");
 		System.out.println(isPalindromic("hello") ? "Palindrome \n" : "Not a Palindrome \n");
 		System.out.println(isPalindromic("IdiddidI") ? "Palindrome \n" : "Not a Palindrome \n");
+		
+		System.out.println(isStringAPalindrome("I did, did I?"));
 
 	}
 	
@@ -56,6 +58,33 @@ public class PalindromeCheck {
 		}
 		
 		return true;
+	}
+	
+	private static boolean isStringAPalindrome(String input) {
+		
+		System.out.println("input: " + input);
+		
+		int i = 0;
+		int j = input.length() - 1;
+		
+		while (i < j) {
+			
+			while (!Character.isLetterOrDigit(input.charAt(i)) && i < j) {
+				++i;
+			}
+			
+			while (!Character.isLetterOrDigit(input.charAt(j)) && i < j) {
+				--j;
+			}
+			
+			if (Character.toLowerCase(input.charAt(i++)) != Character.toLowerCase(input.charAt(j--))) {
+				return false;
+			}
+			
+		}
+		
+		return true;	
+		
 	}
 
 }

@@ -11,7 +11,7 @@ public class GetLastCharacterInAString {
 
 	private static void fetchLastCharacter(String sentence) {
 		
-		char lastChar = sentence.substring(sentence.length() - 2).charAt(0);
+		char lastChar = sentence.substring(sentence.length() - 1).charAt(0);
 		System.out.println("lastChar: " + String.valueOf(lastChar));
 		
 	}

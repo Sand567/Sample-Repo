@@ -84,7 +84,7 @@ public class ArrayQues {
 				secondLargest = intArray[i];
 			}
 		}
-			
+
 		System.out.println("Input Array:");
 		System.out.println(Arrays.toString(intArray));
 		System.out.println("Second Largest Element: ");

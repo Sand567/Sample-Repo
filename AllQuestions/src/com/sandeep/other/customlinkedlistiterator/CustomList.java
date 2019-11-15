@@ -18,9 +18,7 @@ public class CustomList<T> implements Iterable<Node<T>> {
 	
 	public void add(T data) {
 		
-		Node<T> temp = new Node<>();
-		temp.setNext(null);
-		temp.setData(data);
+		Node<T> temp = new Node<>(data);
 		
 		if (head == null) {
 			temp.setPrevious(null);

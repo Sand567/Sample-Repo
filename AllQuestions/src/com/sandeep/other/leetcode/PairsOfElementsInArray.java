@@ -1,8 +1,10 @@
-package com.sandeep.other;
+package com.sandeep.other.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
+import com.sandeep.other.Pair;
 
 public class PairsOfElementsInArray {
 	

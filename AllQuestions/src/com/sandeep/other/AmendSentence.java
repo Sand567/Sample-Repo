@@ -17,10 +17,10 @@ public class AmendSentence {
 		
 		StringBuilder result = new StringBuilder();
 		
-		result.append(s.charAt(0));
-		
-		for (int i = 1; i < s.length(); i++) {
-			if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z' && i == 0) {
+				result.append(s.charAt(i));
+			} else if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
 				result.append(" ").append(s.charAt(i));
 			} else {
 				result.append(s.charAt(i));

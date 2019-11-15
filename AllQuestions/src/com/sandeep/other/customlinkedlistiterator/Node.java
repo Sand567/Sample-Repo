@@ -6,6 +6,11 @@ public class Node<T> {
 	private Node<T> next;
 	private Node<T> previous;
 	
+	public Node(T data) {
+		this.data = data;
+		next = previous = null;
+	}
+	
 	public T getData() {
 		return data;
 	}

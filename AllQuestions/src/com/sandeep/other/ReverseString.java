@@ -5,7 +5,7 @@ public class ReverseString {
 	public static void main(String[] args) {
 		
 		String source = "Hello World";
-		System.out.println("The reverse of the original string is === " + reverse(source) + " ===");
+		System.out.println("The reverse of the original string is " + reverse(source));
 		
 	}
 	

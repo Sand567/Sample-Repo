@@ -14,6 +14,12 @@ public class AncestorTree {
 			left = null;
 			right = null;
 		}
+
+		@Override
+		public String toString() {
+			return data + " ";
+		}
+		
 	}
 
 	public static void main(String[] args) {
@@ -59,6 +65,7 @@ public class AncestorTree {
 					root = stack.peek();
 					stack.pop();
 				}
+
 			}
 			
 			root = stack.empty() ? null : stack.peek().right;

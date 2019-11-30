@@ -6,7 +6,7 @@ public class StringPermutationDemo {
 		permutation("GOD");
 	}
 
-	public static void permutation(String input) {
+	private static void permutation(String input) {
 		permutation("", input);
 	}
 

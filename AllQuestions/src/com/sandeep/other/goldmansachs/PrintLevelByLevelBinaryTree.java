@@ -67,13 +67,15 @@ public class PrintLevelByLevelBinaryTree {
 
                 Node node = queue.peek();
                 System.out.print((node != null ? node.data : "No node") + " ");
-                Node removed = queue.remove();
+                queue.remove();
 
-                if (node.left != null) {
-                    queue.add(node.left);
-                }
-                if (node.right != null) {
-                    queue.add(node.right);
+                if (node != null) {
+                    if (node.left != null) {
+                        queue.add(node.left);
+                    }
+                    if (node.right != null) {
+                        queue.add(node.right);
+                    }
                 }
 
                 nodeCount--;

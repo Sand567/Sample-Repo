@@ -1,15 +1,15 @@
 package com.sandeep.mergeSort;
 
-import java.util.Arrays;
-
 import com.sandeep.common.Helper;
+
+import java.util.Arrays;
 
 /**
  * Merge Sort
  * Time Complexity: Logarithmic => O(nlogn)
  * Not an in-place algorithm
  */
-public class Main {
+public class MergeSortDemo {
 
 	public static void main(String[] args) {
 		
@@ -23,7 +23,7 @@ public class Main {
 	
 	private static void mergeSort(int[] input, int start, int end) {
 		
-		if (end - start < 2) {
+		if ((end - start) < 2) {
 			return;
 		}
 		

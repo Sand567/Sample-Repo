@@ -1,8 +1,8 @@
-package com.sandeep.inserttionSort;
+package com.sandeep.insertionSort;
 
 import com.sandeep.common.Helper;
 
-public class InsertSortRecursive {
+public class InsertionSortRecursive {
 
 	public static void main(String[] args) {
 		

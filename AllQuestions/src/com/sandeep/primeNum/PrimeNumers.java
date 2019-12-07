@@ -4,9 +4,9 @@ public class PrimeNumers {
 
 	public static void main(String[] args) {
 		
-		int num = 6;
+		int num = 223;
 		System.out.println("Sqrt of " + num + " is " + Math.sqrt(num));
-		System.out.println("Is Prime or not? " + (isPrime(num) ? "NOT PRIME" : "PRIME"));
+		System.out.println("Is Prime or not? " + (isPrime(num) ? "PRIME" : "NOT PRIME"));
 
 	}
 	
@@ -21,12 +21,13 @@ public class PrimeNumers {
 		}
 		
 		int sqrt = (int) Math.sqrt(number) + 1;
+
+		System.out.println("sqrt: " + sqrt);
 		
 		for (int i = 3; i < sqrt; i += 2) {
 			if (number % i == 0) {
 				return false;
 			}
-			
 		}
 		
 		return true;

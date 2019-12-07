@@ -1,8 +1,8 @@
-package com.sandeep.inserttionSort;
-
-import java.util.Arrays;
+package com.sandeep.insertionSort;
 
 import com.sandeep.common.Helper;
+
+import java.util.Arrays;
 
 /**
  * Insertion Sort
@@ -10,7 +10,7 @@ import com.sandeep.common.Helper;
  * Stable Algorithm
  * In place algorithm
  */
-public class Main {
+public class InsertionSortDemo {
 
 	public static void main(String[] args) {
 		

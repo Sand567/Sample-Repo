@@ -1,8 +1,8 @@
 package com.sandeep.bubbleSort;
 
-import java.util.Arrays;
-
 import com.sandeep.common.Helper;
+
+import java.util.Arrays;
 
 /**
  * Bubble Sort
@@ -10,7 +10,7 @@ import com.sandeep.common.Helper;
  * Stable Algorithm
  * In place algorithm
  */
-public class Main {
+public class BubbleSortDemo {
 
 	public static void main(String[] args) {
 		

@@ -12,8 +12,9 @@ public class SetMatrixZeroes {
 
 	public static void main(String[] args) {
 		
-		int[][] matrix = {{0, 8, 7}, {9, 0, 8}, {9, 9, 8}};
+		int[][] matrix = {{15, 19, -1, 0, 20}, {10, 21, 16, 49, 52}, {90, -70, -2, -5, -7}, {11, 10, -50, 0 , -40}};
 		setZeroes(matrix);
+		setZeroesMethod2(matrix);
 
 	}
 
@@ -61,6 +62,58 @@ public class SetMatrixZeroes {
 		System.out.println("After update");
 		System.out.println(Arrays.deepToString(matrix));
 		
+	}
+
+	private static void setZeroesMethod2(int[][] matrix) {
+
+		boolean firstColZero = false;
+		boolean firstRowZero = false;
+
+		for (int i = 0; i < matrix.length; i++) {
+			if (matrix[i][0] == 0) {
+				firstColZero = true;
+				break;
+			}
+		}
+
+		for (int i = 0; i < matrix[0].length; i++) {
+			if (matrix[0][i] == 0) {
+				firstRowZero = true;
+				break;
+			}
+		}
+
+		for (int i = 1; i < matrix.length; i++) {
+			for (int j = 1; j < matrix[0].length; j++) {
+				if (matrix[i][j] == 0) {
+					matrix[i][0] = 0;
+					matrix[0][j] = 0;
+				}
+			}
+		}
+
+		for (int i = 1; i < matrix.length; i++) {
+			for (int j = 1; j < matrix[0].length; j++) {
+				if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+					matrix[i][j] = 0;
+				}
+			}
+		}
+
+		if (firstColZero) {
+			for (int i = 0; i < matrix.length; i++) {
+				matrix[i][0] = 0;
+			}
+		}
+
+		if (firstRowZero) {
+			for (int i = 0; i < matrix[0].length; i++) {
+				matrix[0][i] = 0;
+			}
+		}
+
+		System.out.println(Arrays.deepToString(matrix));
+
 	}
 
 }

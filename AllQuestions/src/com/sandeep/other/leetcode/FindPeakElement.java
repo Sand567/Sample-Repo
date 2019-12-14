@@ -4,9 +4,9 @@ public class FindPeakElement {
 
 	public static void main(String[] args) {
 		
-		int[] num = {3, 5, 11, 6, 3, 11, 2};
+		int[] num = {3, 5, 11, 6, 13, 11, 2};
 		
-		System.out.println("peak element is at index: " + findPeakElement(num));
+		System.out.println("max index: " + findPeakElement(num) + ", max element: " + num[findPeakElement(num)]);
 
 	}
 	

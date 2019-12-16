@@ -63,9 +63,11 @@ public class InsertInterval {
 		List<Interval> output = new ArrayList<>();
 		
 		for (Interval interval : intervals) {
+			// if interval is before newInterval
 			if (newInterval == null || interval.end < newInterval.start) {
 				output.add(interval);
 			} else if (newInterval.end < interval.start) {
+				// if newInterval is before interval
 				output.add(newInterval);
 				newInterval = null;
 				output.add(interval);
@@ -75,7 +77,7 @@ public class InsertInterval {
 				newInterval.end = Math.max(newInterval.end, interval.end);
 			}
 		}
-
+		
 		if (newInterval == null) {
 			return output;
 		}

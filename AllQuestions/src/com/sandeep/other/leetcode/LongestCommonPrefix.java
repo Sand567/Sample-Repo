@@ -25,48 +25,53 @@ public class LongestCommonPrefix {
         // "dog","racecar","car"
 
         String[] strings = new String[] {"flower","flow","flight"};
-        System.out.println("\nlongest common prefix: " + longestCommonPrefix(strings));
+        System.out.println("longest common prefix: " + longestCommonPrefix(strings));
     }
 
     private static String longestCommonPrefix(String[] strings) {
 
+        StringBuilder longestCommonPrefix = new StringBuilder();
+
+        // if strings is either null or length is 0
+        // we just return the empty longestCommonPrefix
         if (strings == null || strings.length == 0) {
-            return "";
+            return longestCommonPrefix.toString();
         }
 
-        int minLength = Integer.MAX_VALUE;
+        // this is to maintain the index
+        // when we loop through strings[i].toCharArray()
+        int index = 0;
 
-        for (String str : strings) {
-            if (minLength > str.length()) {
-                minLength = str.length();
-            }
-        }
+        // we just consider the first element in strings array
+        // we then compare every char in the first string with
+        // other characters of other strings
+        for (char c : strings[0].toCharArray()) {
 
-        if (minLength == 0) {
-            return "";
-        }
+            // we do not again want to compare the 0th element
+            // hence we begin with the first element
+            for (int i = 1; i < strings.length; i++) {
 
-        for (int j = 0; j < minLength; j++) {
-            char previous = '0';
-
-            for (int i = 0; i < strings.length; i++) {
-
-                System.out.print(strings[i].charAt(j) + " ");
-
-                if (i == 0) {
-                    previous = strings[i].charAt(j);
-                    continue;
+                // if the index is >= strings length or
+                // if c is not equal to character at the next string's character at this particular index
+                // we then just return longestCommonPrefix
+                // because this means that whenever either of the below conditions
+                // occur whatever the value at longestCommonPrefix would be the longest common prefix
+                if (index >= strings[i].length() || c != strings[i].charAt(index)) {
+                    return longestCommonPrefix.toString();
                 }
-
-                if (strings[i].charAt(j) != previous) {
-                    return strings[i].substring(0, j);
-                }
-
-                System.out.println();
             }
 
+            // if it comes here it means that characters of subsequent strings
+            // continue to be equal hence we keep
+            // appending it to the longestCommonPrefix
+            longestCommonPrefix.append(c);
+
+            // we do this because we need to move over
+            // to next character and compare those
+            index++;
         }
 
-        return strings[0].substring(0, minLength);
+        return longestCommonPrefix.toString();
+
     }
 }

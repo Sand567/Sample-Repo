@@ -7,7 +7,8 @@ public class AlternatingSums {
 	public static void main(String[] args) {
 		
 		int[] input = {20, 15, 40, 35, 60, 120};
-		
+
+		System.out.println("Hello world");
 		System.out.println("totalSum alternateSum difference");
 		System.out.println(Arrays.toString(alternateSum(input)));
 

@@ -1,19 +1,32 @@
-package com.sandeep.other.leetcode;
+package AllQuestions.src.com.sandeep.other.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Example:
+
+Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+
+ */
 public class TwoSum {
 
 	public static void main(String[] args) {
 		
-		int[] numbers = {2, 11, 7, 15};
-		int target = 18;
+		int[] numbers = {2, 7, 11, 15, -6, -2};
+		int target = 9;
 		
 		findTwoSumMethod1(numbers, target);
 		System.out.println();
-		findTwoSumMethod2(numbers, target);
+//		findTwoSumMethod2(numbers, target);
 
 	}
 
@@ -36,30 +49,21 @@ public class TwoSum {
 	}
 
 	private static void findTwoSumMethod1(int[] numbers, int target) {
-		
-		Map<Integer, Integer> map = new HashMap<>();
+
 		int[] result = new int[2];
-		
 		System.out.println(Arrays.toString(numbers));
-		
+		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < numbers.length; i++) {
-			if (map.containsKey(numbers[i])) {
-				System.out.println("Inside if, i: " + i);
-				int index = map.get(numbers[i]);
-				result[0] = index + 1;
-				result[1] = i + 1;
-				break;
-			} else {
-				System.out.println("Inside else, i: " + i);
-				int value = target - numbers[i];
-				System.out.println("value: " + value);
-				map.put(value, i);
+			int newTarget = target - numbers[i];
+
+			if (map.containsKey(newTarget)) {
+				System.out.println("The output found at " + newTarget + " and " + numbers[i]);
+				System.out.println(map.get(newTarget) + " " + i);
 			}
+
+			map.put(numbers[i], i);
 		}
-		
-		System.out.println();
-		System.out.println("Method 1");
-		System.out.println(Arrays.toString(result));
+
 		
 	}
 

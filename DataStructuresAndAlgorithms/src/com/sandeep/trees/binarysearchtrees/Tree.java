@@ -1,4 +1,4 @@
-package com.sandeep.trees.binarysearchtrees;
+package DataStructuresAndAlgorithms.src.com.sandeep.trees.binarysearchtrees;
 
 public class Tree {
 	

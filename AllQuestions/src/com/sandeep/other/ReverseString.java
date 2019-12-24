@@ -8,6 +8,8 @@ public class ReverseString {
 		System.out.println("The reverse of the original string is " + reverse(source));
 		
 	}
+
+	// Better way: to use 2 pointers one at the beginning and one at the end
 	
 	private static String reverse(String source) {
 		

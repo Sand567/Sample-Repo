@@ -1,4 +1,4 @@
-package com.sandeep.bubbleSort;
+package DataStructuresAndAlgorithms.src.com.sandeep.sorting.bubbleSort;
 
 import com.sandeep.common.Helper;
 

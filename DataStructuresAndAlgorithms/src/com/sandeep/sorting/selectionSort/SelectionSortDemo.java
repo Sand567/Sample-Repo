@@ -1,4 +1,4 @@
-package com.sandeep.selectionSort;
+package DataStructuresAndAlgorithms.src.com.sandeep.sorting.selectionSort;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ import com.sandeep.common.Helper;
  * Unstable Algorithm
  * In place algorithm
  */
-public class Main {
+public class SelectionSortDemo {
 
 	public static void main(String[] args) {
 		

@@ -1,4 +1,4 @@
-package com.sandeep.other;
+package AllQuestions.src.com.sandeep.other;
 
 public class BalancedBSTFromSortedArray {
 	
@@ -12,15 +12,13 @@ public class BalancedBSTFromSortedArray {
 			left = right = null;
 		}
 	}
-	
-	private static Node root;
 
 	public static void main(String[] args) {
-		int arr[] = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
+		int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
 		int n = arr.length;
-		
-		root = sortedArrayToBST(arr, 0, n - 1);
-        System.out.println("Preorder traversal of constructed BST"); 
+
+		Node root = sortedArrayToBST(arr, 0, n - 1);
+        System.out.println("Pre order traversal of constructed BST");
         preOrder(root);
 	}
 

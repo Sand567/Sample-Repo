@@ -20,14 +20,21 @@ public class ArmstrongNumber {
 		int sum = 0;
 		
 		while (copyOfNumber != 0) {
+
+			System.out.println("copyOfNumber: " + copyOfNumber);
+
 			int lastDigit = copyOfNumber % 10;
 			int lastDigitToThePowerOfNoOfDigits = 1;
 			
 			for (int i = 0; i < numOfDigits; i++) {
 				lastDigitToThePowerOfNoOfDigits *= lastDigit;
 			}
+
+			System.out.println("lastDigitToThePowerOfNoOfDigits: " + lastDigitToThePowerOfNoOfDigits);
 			
 			sum += lastDigitToThePowerOfNoOfDigits;
+
+			System.out.println("sum: " + sum);
 			copyOfNumber /= 10;
 		}
 		
@@ -36,6 +43,8 @@ public class ArmstrongNumber {
         } else {
             System.out.println(number + " is not an armstrong number");
         }
+
+		System.out.println();
 		
 	}
 

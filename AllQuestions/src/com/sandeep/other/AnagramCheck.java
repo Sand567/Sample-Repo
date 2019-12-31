@@ -1,4 +1,4 @@
-package com.sandeep.other;
+package AllQuestions.src.com.sandeep.other;
 
 import java.util.Arrays;
 

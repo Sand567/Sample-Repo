@@ -1,4 +1,4 @@
-package com.sandeep.other;
+package AllQuestions.src.com.sandeep.other;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -11,7 +11,7 @@ import java.util.Set;
 public class ArraySumUsingSet {
 
 	public static void main(String[] args) {
-		prettyPrint(getRandomArray(10), 11);
+		prettyPrint(getRandomArray(10), 15);
 	}
 
 	/**

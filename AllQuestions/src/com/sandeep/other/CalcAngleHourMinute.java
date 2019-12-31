@@ -13,7 +13,7 @@ public class CalcAngleHourMinute {
 		if (hour < 0 || min < 0 || hour > 12 || min > 60) {
 			System.out.println("Wrong input");
 		}
-		
+
 		if (hour == 12) {
 			hour = 0;
 		}
@@ -28,6 +28,7 @@ public class CalcAngleHourMinute {
 		int angle = Math.abs(hourAngle - minAngle);
 		
 		// if angle > 180, subtract it with 360 degrees
+		// and return the minimum of those angles
 		angle = Math.min(360 - angle, angle);
 		
 		return angle;

@@ -70,7 +70,7 @@ public class ReverseLinkedListII {
         Node tail = current;
 
         // this is to do the reversal until we reach the
-        // position "n" which is the end position inclusive of the reversal
+        // position "n" which is the end position inclusive, of the reversal
         while (n > 0) {
             Node next = current.next;
             current.next = previous;

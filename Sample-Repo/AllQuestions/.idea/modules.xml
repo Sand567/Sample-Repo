@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AllQuestions.iml" filepath="$PROJECT_DIR$/AllQuestions.iml" />
       <module fileurl="file://$PROJECT_DIR$/../DataStructuresAndAlgorithms/DataStructuresAndAlgorithms.iml" filepath="$PROJECT_DIR$/../DataStructuresAndAlgorithms/DataStructuresAndAlgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Java8LambdaBasics/Java8LambdaBasics.iml" filepath="$PROJECT_DIR$/../Java8LambdaBasics/Java8LambdaBasics.iml" />
     </modules>
   </component>
 </project>

@@ -27,12 +27,12 @@ public class DoublyLinkedListDemo {
 		System.out.println("Size: " + list.getSize());
 		
 		System.out.println();
-		list.removeFromFront();
+		System.out.println("Node removed is " + list.removeFromFront());
 		list.printList();
 		System.out.println("Size: " + list.getSize());
 		
 		System.out.println();
-		list.removeFromEnd();
+		System.out.println("Node removed is " + list.removeFromEnd());
 		list.printList();
 		System.out.println("Size: " + list.getSize());
 		

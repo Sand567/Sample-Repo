@@ -15,6 +15,8 @@ public class InsertionSortDemo {
 	public static void main(String[] args) {
 		
 		int[] intArray = Helper.getArray();
+
+		// 20, 35, -15, 7, 55, 1, -22
 		
 		// This will maintain the sorted partition from left to right
 		for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length; firstUnsortedIndex++) {

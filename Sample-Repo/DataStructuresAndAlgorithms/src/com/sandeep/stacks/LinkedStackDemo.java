@@ -1,6 +1,4 @@
-package com.sandeep.stacks;
-
-import com.sandeep.stacks.Employee;
+package DataStructuresAndAlgorithms.src.com.sandeep.stacks;
 
 public class LinkedStackDemo {
 

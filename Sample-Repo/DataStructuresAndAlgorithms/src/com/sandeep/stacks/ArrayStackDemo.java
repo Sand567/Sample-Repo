@@ -1,4 +1,4 @@
-package com.sandeep.stacks;
+package DataStructuresAndAlgorithms.src.com.sandeep.stacks;
 
 public class ArrayStackDemo {
 

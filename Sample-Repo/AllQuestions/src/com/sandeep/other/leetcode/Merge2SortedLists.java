@@ -56,10 +56,14 @@ public class Merge2SortedLists {
 			
 			pNode = pNode.next;
 		}
-		
+
+		// if there are elements remaining
+		// in list pointed by h1
 		if (h1 != null) {
 			pNode = h1;
 		} else {
+			// if there are elements remaining
+			// in list pointed by h2
 			pNode = h2;
 		}
 		

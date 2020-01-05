@@ -23,6 +23,7 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 
 */
 public class MergeInterval {
+    // Hello
     public static void main(String[] args) {
         int[][] intervals = new int[][] {
                 {1, 3},

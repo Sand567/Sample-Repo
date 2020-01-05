@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Sample-Repo.iml" filepath="$PROJECT_DIR$/.idea/Sample-Repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AllQuestions/AllQuestions.iml" filepath="$PROJECT_DIR$/AllQuestions/AllQuestions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructuresAndAlgorithms/src/DataStructuresAndAlgorithms.iml" filepath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/DataStructuresAndAlgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructuresAndAlgorithms/DataStructuresAndAlgorithms1.iml" filepath="$PROJECT_DIR$/DataStructuresAndAlgorithms/DataStructuresAndAlgorithms1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java8LambdaBasics/Java8LambdaBasics.iml" filepath="$PROJECT_DIR$/Java8LambdaBasics/Java8LambdaBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample-Repo.iml" filepath="$PROJECT_DIR$/Sample-Repo.iml" />
     </modules>
   </component>
 </project>

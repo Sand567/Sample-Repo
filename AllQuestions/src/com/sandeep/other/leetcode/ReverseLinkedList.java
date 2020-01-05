@@ -52,7 +52,8 @@ public class ReverseLinkedList {
             // now we set previous as head's next element
             head.next = previous;
 
-            // now assign the current head to previous
+            // now make the previous point to same place
+            // where head is pointing to
             previous = head;
 
             // finally move the head pointer to the next element

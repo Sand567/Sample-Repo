@@ -26,7 +26,7 @@ public class EmployeeDoublyLinkedList {
 			return false;
 		}
 		
-		// at this point we that existingEmployee exists in the list
+		// at this point we know that existingEmployee exists in the list
 		// now we add the newEmployee before the existingEmployee
 		EmployeeNode newNode = new EmployeeNode(newEmployee);
 		newNode.setNext(current);

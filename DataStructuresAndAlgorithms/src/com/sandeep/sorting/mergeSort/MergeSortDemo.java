@@ -1,4 +1,4 @@
-package com.sandeep.mergeSort;
+package com.sandeep.sorting.mergeSort;
 
 import com.sandeep.common.Helper;
 
@@ -15,8 +15,10 @@ public class MergeSortDemo {
 		
 		int[] intArray = Helper.getArray();
 		
-		mergeSort(intArray, 0, intArray.length);
-		
+//		mergeSort(intArray, 0, intArray.length);
+
+		mergeSort2(intArray, intArray.length);
+
 		System.out.println("Final intArray: " + Arrays.toString(intArray));
 
 	}
@@ -38,6 +40,64 @@ public class MergeSortDemo {
 		// This will merge both the partitions
 		merge(input, start, mid, end);
 		
+	}
+
+	private static void mergeSort2(int[] input, int length) {
+
+		// {20, 35, -15, 7, 55, 1, -22}
+
+		if (length < 2) {
+			return;
+		}
+
+		int mid = length / 2;
+
+		System.out.println("length: " + length + ", mid: " + mid + ", (length - mid): " + (length - mid));
+
+		int[] left = new int[mid];
+		int[] right = new int[length - mid];
+
+		for (int i = 0; i < mid; i++) {
+			left[i] = input[i];
+		}
+
+		for (int i = mid; i < length; i++) {
+			right[i - mid] = input[i];
+		}
+
+		mergeSort2(left, mid);
+		mergeSort2(right, length - mid);
+
+		System.out.println("left: " + Arrays.toString(left) + ", right: " + Arrays.toString(right));
+
+		merge2(input, left, right, mid, length - mid);
+	}
+
+	private static void merge2(int[] input, int[] left, int[] right, int l, int r) {
+		int i = 0, j = 0, k = 0;
+
+		// if there are elements in both the left and right array
+		while (i < l && j < r) {
+			if (left[i] <= right[j]) {
+				input[k++] = left[i++];
+			} else {
+				input[k++] = right[j++];
+			}
+		}
+
+		System.out.println("i: " + i + ", j: " + j + ", input before: " + Arrays.toString(input));
+
+		// only if there are elements in the left array
+		while (i < l) {
+			input[k++] = left[i++];
+		}
+
+		// only if there are elements in the right array
+		while (j < r) {
+			input[k++] = right[j++];
+		}
+
+		System.out.println("input after: " + Arrays.toString(input));
 	}
 
 	private static void merge(int[] input, int start, int mid, int end) {
@@ -64,8 +124,14 @@ public class MergeSortDemo {
 		
 		// This will check both the sub arrays that have to transferred over to the temp array
 		while (i < mid && j < end) {
-			temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
+			temp[tempIndex++] = (input[i] <= input[j]) ? input[i++] : input[j++];
 		}
+
+		System.out.println("temp: " + Arrays.toString(temp));
+
+		System.out.println("start: " + start + " | end: " + end +
+				" | mid: " + mid + " | i: " + i + " | j: " + j + " | tempIndex: " + tempIndex);
+		System.out.println("----------------");
 		
 		// This will work only if the there are elements left out
 		// in the left sub array but the position of the remaining element 

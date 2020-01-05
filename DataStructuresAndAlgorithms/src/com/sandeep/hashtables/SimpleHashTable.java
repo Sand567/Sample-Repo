@@ -10,7 +10,9 @@ public class SimpleHashTable {
 	
 	// we consume a string and convert to an integer
 	private int hashKey(String key) {
-		return key.length() % hashTable.length;
+		int hashedKey = key.length() % hashTable.length;
+		System.out.println("hashedKey: " + hashedKey);
+		return hashedKey;
 	}
 
 	public void put(String key, Employee employee) {
@@ -18,7 +20,7 @@ public class SimpleHashTable {
 		
 		if (occupied(hashedKey)) {
 			
-			// this is the index to incrementing 
+			// this is the index to increment
 			// this happens when we keep incrementing and reach the end of the array
 			// and loop back to 0 and start over finally reach stopIndex 
 			// which is where we stop incrementing

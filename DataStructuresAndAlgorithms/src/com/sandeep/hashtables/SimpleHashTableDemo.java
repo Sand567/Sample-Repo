@@ -1,6 +1,6 @@
 package com.sandeep.hashtables;
 
-public class SimpleHasTableDemo {
+public class SimpleHashTableDemo {
 
 	public static void main(String[] args) {
 		

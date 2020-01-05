@@ -35,6 +35,8 @@ public class MergeInterval {
     }
 
     private static int[][] merge(int[][] intervals) {
+
+        // if lenght <= 1 return interval
         if (intervals.length <= 1) {
             return intervals;
         }

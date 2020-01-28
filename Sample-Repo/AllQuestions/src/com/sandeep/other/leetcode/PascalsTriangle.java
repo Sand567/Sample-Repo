@@ -60,7 +60,7 @@ public class PascalsTriangle {
                 currentRow.add(previousRow.get(j - 1) + previousRow.get(j));
             }
 
-            // we also know that each ends with a 1
+            // we also know that each row ends with a 1
             // so add 1 at the end of each row
             currentRow.add(1);
 

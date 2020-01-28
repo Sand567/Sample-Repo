@@ -52,7 +52,7 @@ public class ReverseLinkedListII {
             // keep updating the previous pointer
             // to have a reference to the previous node
             // for the current pointer
-            // current would be pointing to the position where the reversal should being
+            // current would be pointing to the position where the reversal should begin
             previous = current;
             current = current.next;
             // decrement m and n to find the right

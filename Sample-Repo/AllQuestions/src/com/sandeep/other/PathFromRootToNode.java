@@ -27,7 +27,7 @@ public class PathFromRootToNode {
         root.right = new Node(6);
         root.right.right = new Node(7);
         
-        printPath(root, 3);
+        printPath(root, 7);
 
 	}
 

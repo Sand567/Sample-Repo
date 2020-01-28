@@ -37,19 +37,19 @@ public class ThreeSum {
         List<List<Integer>> output = new LinkedList<>();
 
         // nums.length - 2 because we are making sure that
-        // the comparisons go out of range
+        // the comparisons do not go out of range
         for (int i = 0; i < nums.length - 2; i++) {
             if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {
 
                 // we begin the search from the ith's next element
                 int low = i + 1;
                 int high = nums.length - 1;
-                int sum = 0 - nums[i];
+                int sum = -nums[i]; // same as 0 - nums[i]
 
                 while (low < high) {
                     if (nums[low] + nums[high] == sum) {
 
-                        // if they the 2 elements add up to the sum, we then add
+                        // if the 2 elements add up to the sum along with current element, we then add
                         // add it to the output list
                         output.add(Arrays.asList(nums[i], nums[low], nums[high]));
 

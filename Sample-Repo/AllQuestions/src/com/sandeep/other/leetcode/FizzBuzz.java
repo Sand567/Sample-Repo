@@ -1,4 +1,4 @@
-package AllQuestions.src.com.sandeep.other.leetcode;
+package com.sandeep.other.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ Return:
  */
 public class FizzBuzz {
     public static void main(String[] args) {
-        int n = 30;
+        int n = 15;
         System.out.println(fizzBuzz(n));
     }
 

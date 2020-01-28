@@ -1,4 +1,4 @@
-package com.sandeep.custom.customhash;
+package DataStructuresAndAlgorithms.src.com.sandeep.custom.customhash;
 
 public class LinkedHashSetCustom<E> {
 

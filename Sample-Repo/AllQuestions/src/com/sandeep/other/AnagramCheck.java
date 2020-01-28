@@ -1,4 +1,4 @@
-package AllQuestions.src.com.sandeep.other;
+package com.sandeep.other;
 
 import java.util.Arrays;
 
@@ -50,9 +50,9 @@ public class AnagramCheck {
 	/**
 	 * This method converts the string to a character array
 	 * and then sorts it and checks the length and characters are same or not
-	 * @param word1
-	 * @param word2
-	 * @return
+	 * @param word1 first string
+	 * @param word2 second string
+	 * @return boolean
 	 */
 	private static boolean areAnagrams(String word1, String word2) {
 		char[] str1 = word1.toCharArray();

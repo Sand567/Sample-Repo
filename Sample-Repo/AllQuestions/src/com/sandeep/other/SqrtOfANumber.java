@@ -4,7 +4,7 @@ public class SqrtOfANumber {
 
 	public static void main(String[] args) {
 		
-		int number = 16;
+		int number = 17;
 		findSquareRoot(number);
 
 	}

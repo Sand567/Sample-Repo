@@ -1,4 +1,4 @@
-package AllQuestions.src.com.sandeep.other.leetcode;
+package com.sandeep.other.leetcode;
 
 /*
 
@@ -61,8 +61,8 @@ public class PalindromeLinkedList {
         slow = reverseList(slow);
         fast = head;
 
-        // now if the elements in a linked is a palindrome
-        // both the slow and fast pointers will being with the same number
+        // now if the elements in a linked list is a palindrome
+        // both the slow and fast pointers will begin with the same number
         while (slow != null) {
             if (slow.val != fast.val) {
                 return false;

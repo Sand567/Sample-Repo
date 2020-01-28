@@ -25,7 +25,7 @@ public class KthLargestElementInAnArray {
     public static void main(String[] args) {
         int[] nums = new int[] {3, 2, 1, 5, 6, 4};
         int k = 2;
-        System.out.println("The " + k + "th largest element is: " + findKthLargestMethod1(nums, k));
+//        System.out.println("The " + k + "th largest element is: " + findKthLargestMethod1(nums, k));
         System.out.println("The " + k + "th largest element is: " + findKthLargestMethod2(nums, k));
     }
 

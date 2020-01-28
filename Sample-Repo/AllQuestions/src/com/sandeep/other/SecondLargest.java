@@ -4,7 +4,7 @@ public class SecondLargest {
 
 	public static void main(String[] args) {
 		
-		int[] a = new int[] {35, 12, -15, 21, 3};
+		int[] a = new int[] {35, 12, -15, 21, 3, -10, 12};
 		
 		int firstLargest;
 		int secondLargest;

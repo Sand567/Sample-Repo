@@ -6,7 +6,7 @@ public class MajorityElement {
 
 	public static void main(String[] args) {
 		
-		int[] nums = {10, 10, 20, 40, 10, 10, 20, 10, 10, 30};
+		int[] nums = {10, 10, 20, 40, 10, 10, 20, 20, 10, 30};
 		System.out.println(majorityElem(nums));
 		System.out.println(majorityElem2(nums));
 

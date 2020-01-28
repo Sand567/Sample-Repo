@@ -39,7 +39,7 @@ public class LevelOrderTraversalBinaryTree {
 			return;
 		}
 		
-		Queue<Node> queue = new LinkedList<Node>();
+		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
 		
 		while (!queue.isEmpty()) {

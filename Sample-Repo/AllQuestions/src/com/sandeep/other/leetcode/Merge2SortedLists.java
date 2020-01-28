@@ -23,6 +23,7 @@ public class Merge2SortedLists {
 		head1.next.next = new Node(70);
 		head1.next.next.next = new Node(80);
 		head1.next.next.next.next = new Node(100);
+		head1.next.next.next.next.next = new Node(120);
 		
 		Node head2 = new Node(20);
 		head2.next = new Node(30);
@@ -59,12 +60,16 @@ public class Merge2SortedLists {
 
 		// if there are elements remaining
 		// in list pointed by h1
-		if (h1 != null) {
+		while (h1 != null) {
 			pNode = h1;
-		} else {
+			h1 = h1.next;
+		}
+
+		while (h2 != null) {
 			// if there are elements remaining
 			// in list pointed by h2
 			pNode = h2;
+			h2 = h2.next;
 		}
 		
 		System.out.println();

@@ -8,9 +8,7 @@ public class RotateArray {
 
 	public static void main(String[] args) {
 		
-		int k = 3;
-		
-		rotateWithIntermediateArray(new int[] {1, 2, 3, 4, 5, 6, 7}, k);
+		rotateWithIntermediateArray(new int[] {1, 2, 3, 4, 5, 6, 7}, 3);
 		System.out.println("===================");
 		bubbleRotate(new int[] {1, 2, 3, 4, 5, 6, 7}, 4);
 		System.out.println("===================");

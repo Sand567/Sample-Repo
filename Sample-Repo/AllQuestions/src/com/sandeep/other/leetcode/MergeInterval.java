@@ -2,7 +2,6 @@ package com.sandeep.other.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 /*
@@ -37,7 +36,7 @@ public class MergeInterval {
 
     private static int[][] merge(int[][] intervals) {
 
-        // if lenght <= 1 return interval
+        // if length <= 1 return interval
         if (intervals.length <= 1) {
             return intervals;
         }
@@ -46,7 +45,7 @@ public class MergeInterval {
         // hence we have to sort the array
         // Arrays.sort(intervals, (arr1, arr2) -> Integer.compare(arr1[0], arr2[0]));
         // Below same as above
-        Arrays.sort(intervals, Comparator.comparingInt(arr -> arr[0]));
+        Arrays.sort(intervals, (arr1, arr2) -> Integer.compare(arr1[0], arr2[0]));
 
         // As we do not know the size the resulting array
         // we create a list of int array

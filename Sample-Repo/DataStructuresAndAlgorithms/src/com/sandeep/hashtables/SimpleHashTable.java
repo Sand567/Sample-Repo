@@ -1,4 +1,4 @@
-package com.sandeep.hashtables;
+package DataStructuresAndAlgorithms.src.com.sandeep.hashtables;
 
 public class SimpleHashTable {
 

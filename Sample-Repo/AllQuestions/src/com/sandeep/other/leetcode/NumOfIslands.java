@@ -11,6 +11,7 @@ assume all four edges of the grid are all surrounded by water.
 Example 1:
 
 Input:
+
 11110
 11010
 11000
@@ -21,6 +22,7 @@ Output: 1
 Example 2:
 
 Input:
+
 11000
 11000
 00100

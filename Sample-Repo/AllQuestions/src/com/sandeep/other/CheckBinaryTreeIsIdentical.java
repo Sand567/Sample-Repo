@@ -117,7 +117,7 @@ public class CheckBinaryTreeIsIdentical {
             z = stack.peek().second;
             stack.poll();
 
-            // if the value are root does not match return false
+            // if the value at root does not match, return false
             if (x.key != z.key) {
                 return false;
             }

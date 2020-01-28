@@ -1,6 +1,4 @@
-package com.sandeep.queues;
-
-import com.sandeep.queues.Employee;
+package DataStructuresAndAlgorithms.src.com.sandeep.queues;
 
 public class ArrayQueueDemo {
 

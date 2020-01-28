@@ -51,6 +51,7 @@ public class ContainsDuplicateII {
                 return true;
             } else {
                 // else add it to the map
+                // (number, index)
                 map.put(current, i);
             }
         }

@@ -1,4 +1,4 @@
-package com.sandeep.queues;
+package DataStructuresAndAlgorithms.src.com.sandeep.queues;
 
 import java.util.NoSuchElementException;
 

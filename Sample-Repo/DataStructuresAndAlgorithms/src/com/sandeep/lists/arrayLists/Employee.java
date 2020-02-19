@@ -1,4 +1,4 @@
-package DataStructuresAndAlgorithms.src.com.sandeep.lists.arrayLists;
+package com.sandeep.lists.arrayLists;
 
 public class Employee {
 	

@@ -1,4 +1,4 @@
-package DataStructuresAndAlgorithms.src.com.sandeep.lists.arrayLists;
+package com.sandeep.lists.arrayLists;
 
 import java.util.ArrayList;
 import java.util.List;

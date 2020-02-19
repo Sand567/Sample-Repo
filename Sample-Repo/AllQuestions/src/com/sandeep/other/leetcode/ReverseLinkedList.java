@@ -1,4 +1,4 @@
-package AllQuestions.src.com.sandeep.other.leetcode;
+package com.sandeep.other.leetcode;
 
 /*
 
